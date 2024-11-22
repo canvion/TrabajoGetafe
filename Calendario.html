@@ -1,0 +1,163 @@
+<!--He creado la estructura inicial de una página HTML con el estándar `<!DOCTYPE html>` y he configurado el idioma 
+como español. En la cabecera(`<head>`), he definido el título de la página y enlazado un archivo 
+CSS externo para aplicar estilos personalizados.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calendario Getafe Club de Fútbol</title>
+    <link rel="stylesheet" type="text/css" href="Calendario.css">
+</head>
+<body>
+    <!--He creado un menú de navegación con botones interactivos: algunos muestran alertas emergentes y otros redirigen a
+    páginas específicas. También he añadido un logo en el primer botón para representar el enlace de "Inicio".-->
+    <nav>
+        <button onclick="alert('Inicio')">
+            <img src="imagenes/getafeLogo.png" alt="Inicio" width="45" height="45"> 
+        </button>
+        <button onclick="window.location.href='Palmares.html'">Palmarés</button>
+        <button onclick="window.location.href='Plantilla.html'">Plantilla</button>
+        <button onclick="window.location.href='Calendario.html'">Calendario</button>
+        <button onclick="alert('Tienda')">Tienda</button>
+    </nav>
+    <header>
+        <h1>Calendario Getafe Club de Fútbol</h1>
+    </header>
+    <section>
+        <!--He creado un artículo que muestra los partidos en casa del Getafe CF. Utilizo una lista de definiciones 
+        (`<dl>`) con detalles como el rival, el estadio, la fecha, la hora y la ubicación de cada partido, 
+        junto con una imagen del Coliseum Alfonso Pérez para cada uno. Cada partido está representado por un 
+        `<dd>` con la información organizada y visualmente clara.-->
+        <article class="Casa">
+            <dl>  
+                <dt>Partidos en Casa</dt>
+                <dd>
+                    <strong>Rival:</strong> Real Madrid<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 15/10/2023<br>
+                    <strong>Hora:</strong> 18:00<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> FC Barcelona<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 22/10/2023<br>
+                    <strong>Hora:</strong> 20:00<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Celta de Vigo<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 03/12/2023<br>
+                    <strong>Hora:</strong> 18:00<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> RCD Espanyol<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 17/12/2023<br>
+                    <strong>Hora:</strong> 20:00<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Real Valladolid<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 07/01/2024<br>
+                    <strong>Hora:</strong> 18:30<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>                
+                <dd>
+                    <strong>Rival:</strong> Osasuna<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 21/01/2024<br>
+                    <strong>Hora:</strong> 17:00<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Rayo Vallecano<br>
+                    <strong>Estadio:</strong> Coliseum Alfonso Pérez<br>
+                    <strong>Fecha:</strong> 04/02/2024<br>
+                    <strong>Hora:</strong> 21:00<br>
+                    <strong>Ubicación:</strong> Getafe, Madrid<br>
+                    <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
+                </dd>
+            </dl>
+        <!--He creado un segundo artículo que muestra los partidos **fuera de casa** del Getafe CF. 
+        Al igual que en el artículo anterior, utilizo una lista de definiciones (`<dl>`) para cada partido, 
+        detallando el rival, el estadio, la fecha, la hora y la ubicación. Además, se incluye una imagen 
+        representativa del estadio de cada partido fuera de casa.-->
+        </article>
+        <article class="Fuera de Casa">
+            <dl>
+                <dt>Partidos Fuera de Casa</dt>
+                <dd>
+                    <strong>Rival:</strong> Atlético de Madrid<br>
+                    <strong>Estadio:</strong> Wanda Metropolitano<br>
+                    <strong>Fecha:</strong> 29/10/2023<br>
+                    <strong>Hora:</strong> 21:00<br>
+                    <strong>Ubicación:</strong> Madrid<br>
+                    <img src="imagenes/Wanda.jpg" alt="Wanda Metropolitano" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Valencia CF<br>
+                    <strong>Estadio:</strong> Mestalla<br>
+                    <strong>Fecha:</strong> 05/11/2023<br>
+                    <strong>Hora:</strong> 18:30<br>
+                    <strong>Ubicación:</strong> Valencia<br>
+                    <img src="imagenes/Mestalla.jpg" alt="Mestalla" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Sevilla FC<br>
+                    <strong>Estadio:</strong> Ramón Sánchez-Pizjuán<br>
+                    <strong>Fecha:</strong> 12/11/2023<br>
+                    <strong>Hora:</strong> 20:45<br>
+                    <strong>Ubicación:</strong> Sevilla<br>
+                    <img src="imagenes/Pizjuan.jpg" alt="Ramón Sánchez-Pizjuán" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Real Betis<br>
+                    <strong>Estadio:</strong> Benito Villamarín<br>
+                    <strong>Fecha:</strong> 19/11/2023<br>
+                    <strong>Hora:</strong> 17:00<br>
+                    <strong>Ubicación:</strong> Sevilla<br>
+                    <img src="imagenes/Villamarin.jpg" alt="Benito Villamarín" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Villarreal CF<br>
+                    <strong>Estadio:</strong> Estadio de la Cerámica<br>
+                    <strong>Fecha:</strong> 26/11/2023<br>
+                    <strong>Hora:</strong> 19:30<br>
+                    <strong>Ubicación:</strong> Villarreal<br>
+                    <img src="imagenes/Ceramica.jpg" alt="Estadio de la Cerámica" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Athletic Club<br>
+                    <strong>Estadio:</strong> San Mamés<br>
+                    <strong>Fecha:</strong> 03/12/2023<br>
+                    <strong>Hora:</strong> 21:00<br>
+                    <strong>Ubicación:</strong> Bilbao<br>
+                    <img src="imagenes/Sanmames.jpg" alt="San Mamés" width="200">
+                </dd>
+                <dd>
+                    <strong>Rival:</strong> Real Sociedad<br>
+                    <strong>Estadio:</strong> Anoeta<br>
+                    <strong>Fecha:</strong> 10/12/2023<br>
+                    <strong>Hora:</strong> 18:00<br>
+                    <strong>Ubicación:</strong> San Sebastián<br>
+                    <img src="imagenes/Anoeta.jpg" alt="Anoeta" width="200">
+                </dd>
+            </dl>
+        </article>   
+    </section>
+    <!-- He añadido un pie de página (`<footer>`) que incluye un mensaje de copyright con el símbolo `&copy;` 
+    y el año 2024, junto con el nombre "Getafe CF", indicando la autoría del contenido. 
+    Este elemento proporciona información relevante sobre la propiedad del sitio web. -->
+    <footer>
+        <p>&copy; 2024 Getafe CF</p>
+    </footer>
+</body>

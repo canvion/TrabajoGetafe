@@ -1,0 +1,160 @@
+/*He configurado el cuerpo de la página con la fuente Arial, sin márgenes ni rellenos, 
+un fondo gris claro, y corregí el valor de `line-height` a 1.2.*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1,2;
+}
+
+/* He estilizado el contenedor de cookies con un fondo negro semi-transparente, 
+texto blanco, padding de 20px, bordes redondeados y centrado en la parte inferior de la página. */
+.cookie-banner {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-banner button {
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cookie-banner button:hover {
+    background-color: #007af3;
+}
+
+/* He estilizado el menú de navegación (`nav`) con un fondo azul oscuro, un espaciado de 10px y un diseño flexible 
+para distribuir los botones de manera uniforme. Los botones tienen texto blanco, sin fondo ni borde, y se agrandan 
+al pasar el ratón sobre ellos. También, el logo dentro de los botones se alinea verticalmente al centro. */
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0055a5;
+    border-radius: 5px;
+}
+
+nav button img {
+    vertical-align: middle;
+}
+
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/*He estilizado los artículos con fondo blanco, padding de 20px, márgenes de 10px, sombra sutil, altura máxima de 500px 
+y desplazamiento vertical automático.*/
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/*He estilizado las imágenes en los artículos para que se centren, tengan un tamaño fijo, bordes azules con esquinas 
+redondeadas y márgenes superior e inferior de 20px.*/
+article img {
+    display: block;
+    max-width: 300%;
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    border: #007af3 4px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* He asignado flexibilidad y un margen de 10px a los artículos y listas dentro de la sección.*/
+section > article {
+    flex: 1;
+    margin: 10px;
+}
+
+section > dl {
+    flex: 1;
+    margin: 10px;
+}
+
+/*He estilizado los títulos (`<dt>`) con color azul, negrita y sombra, y las descripciones (`<dd>`) con fondo azul, 
+texto blanco, bordes redondeados y centrado. También agregué espaciado entre ellos.*/
+dt {
+    font-weight: bold;
+    color: #1c22a2;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(12, 167, 172, 0.5);
+}
+
+dt + dd {
+    margin-top: 10px;
+}
+
+dd {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #0055a5;
+    color: white;
+    width: 97%;
+    text-align:center;
+}
+
+/* He estilizado el pie de página (`footer`) con un fondo azul oscuro, texto blanco y centrado. 
+Tiene un espaciado de 10px en la parte superior e inferior, y está fijo en la parte inferior de la página. 
+Además, he eliminado el margen del párrafo dentro del pie de página para mantenerlo alineado correctamente. */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

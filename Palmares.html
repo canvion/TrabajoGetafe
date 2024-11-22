@@ -1,0 +1,125 @@
+<!--He creado la estructura inicial de una página HTML con el estándar `<!DOCTYPE html>` y he configurado el idioma 
+como español. En la cabecera(`<head>`), he definido el título de la página y enlazado un archivo 
+CSS externo para aplicar estilos personalizados.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Palmarés Getafe Club de Fútbol</title>
+    <link rel="stylesheet" type="text/css" href="Palmares.css">
+</head>
+<body>
+    <!--He creado un menú de navegación con botones interactivos: algunos muestran alertas emergentes y otros redirigen a
+    páginas específicas. También he añadido un logo en el primer botón para representar el enlace de "Inicio".-->
+    <nav>
+        <button onclick="alert('Inicio')">
+            <img src="imagenes/getafeLogo.png" alt="Inicio" width="45" height="45"> 
+        </button>
+        <button onclick="window.location.href='Palmares.html'">Palmarés</button>
+        <button onclick="window.location.href='Plantilla.html'">Plantilla</button>
+        <button onclick="window.location.href='Calendario.html'">Calendario</button>
+        <button onclick="alert('Tienda')">Tienda</button>
+    </nav>
+    <!--He creado un encabezado para la página utilizando la etiqueta `<header>`, 
+    donde he incluido un título principal (`<h1>`) que destaca el palmarés del Getafe Club de Fútbol.-->
+    <header>
+        <h1>Palmarés Getafe Club de Fútbol</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Títulos Nacionales</h2>
+            <article>
+                <!-- He creado una tabla para organizar información sobre los títulos y los años en los que se obtuvieron. 
+                He utilizado <thead> para los encabezados ("Título" y "Año") y <tbody> para listar los datos, asegurando 
+                una estructura clara y semántica. -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Año</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda División</td>
+                            <td>1998-99</td>
+                        </tr>
+                        <tr>
+                            <td>Tercera División</td>
+                            <td>1981-82</td>
+                        </tr>
+                        <tr>
+                            <td>Trofeo Colombino</td>
+                            <td>2012-13</td>
+                        </tr>
+                        <tr>
+                            <td>Copa Pistón</td>
+                            <td>2010-11</td>
+                        </tr>
+                        <tr>
+                            <td>Champions League</td>
+                            <td>2007-08</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!--He creado una lista de definición (`<dl>`) para detallar los títulos ganados por el Getafe CF, 
+            destacando cada uno con un `<dt>` (título del logro y año) seguido de un `<dd>` (descripción y detalles). 
+            Cada logro incluye una descripción enriquecida con contexto histórico y una imagen representativa para hacer 
+            el contenido más visual e informativo.-->
+            <dl>
+                <dt>Segunda División: 1 (1998-99)</dt>
+                <dd>
+                    <p> En la temporada 1988-89, el Getafe CF emergió como el equipo más destacado de la Segunda División. 
+                        Con determinación y pasión, los azulones lograron coronarse campeones, catapultándose a 
+                        la Primera División por primera vez en su historia. Este triunfo no solo marcó un hito en su 
+                        trayectoria, sino que también encendió el fervor de su fiel afición.</p>
+                    <br>
+                    <img src="imagenes/trofeoSegunda.jpg" alt="Trofeo Segunda División ">
+                </dd>
+                <dt>Tercera División: 1 (1981-82)</dt>
+                <dd>
+                    <p> En la temporada 1981-82, el Getafe CF se alzó como campeón de la Tercera División con una actuación
+                        sobresaliente. Este logro fue fundamental para el crecimiento del club, marcando un antes y un 
+                        después en su historia. La ciudad de Getafe vibró de emoción, celebrando con entusiasmo el éxito de 
+                        su equipo.</p>  
+                    <br>
+                    <img src="imagenes/trofeoTercera.jpg" alt="Trofeo Tercera División ">
+                </dd>
+                <dt>Trofeo Colombino: 1 (2012-13)</dt>
+                <dd>
+                    <p>En la edición 2012-13 del Trofeo Colombino, el Getafe CF demostró su clase alzándose con el título. 
+                        Con un juego sólido y bien organizado, lograron imponerse ante rivales competitivos, dejando una 
+                        marca en este prestigioso torneo. La victoria fortaleció el espíritu del equipo y emocionó a 
+                        su afición.</p>
+                    <br>
+                    <img src="imagenes/trofeoColombino.jpg" alt="Trofeo Colombino">
+                </dd>
+                <dt>Copa Pistón: 1 (2010-11)</dt>
+                <dd>
+                    <p> En la temporada 2010-2011, el Getafe CF se coronó campeón de la Copa Piston con una actuación 
+                        memorable. Los azulones demostraron un juego apasionado y estratégico, superando a equipos de alto 
+                        nivel. Este triunfo añadió un trofeo importante a su colección y reforzó tanto la moral del equipo 
+                        como el entusiasmo de sus seguidores.</p>    
+                    <br>
+                    <img src="imagenes/copaPiston.jpeg" alt="Trofeo Copa Piston">    
+                </dd>
+                <dt>Champions League: 1 (2007-08)</dt>
+                <dd>
+                    <p> En la temporada 2007-08, el Getafe CF hizo historia al conquistar la UEFA Champions League. 
+                        Con un desempeño excepcional y una valentía admirable, lograron derrotar a algunos de los equipos 
+                        más poderosos de Europa. Este triunfo inolvidable elevó al club a la élite del fútbol mundial y dejó 
+                        una marca indeleble en su legado.</p>
+                    <br>
+                    <img src="imagenes/championsTrofeo.jpg" alt="Trofeo Champions League">
+                </dd>
+            </dl>
+        </article>
+        </section>
+    </main>
+    <!-- He añadido un pie de página (`<footer>`) que incluye un mensaje de copyright con el símbolo `&copy;` 
+    y el año 2024, junto con el nombre "Getafe CF", indicando la autoría del contenido. 
+    Este elemento proporciona información relevante sobre la propiedad del sitio web. -->
+    <footer>
+        <p>&copy; 2024 Getafe CF</p>
+    </footer>
+</body>
+</html>

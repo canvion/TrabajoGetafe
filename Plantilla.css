@@ -1,0 +1,114 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0 0 40px; /* Espacio extra para evitar que el contenido quede tapado */
+    box-sizing: border-box;
+}
+
+/* Contenedor principal de porteros */
+.Porteros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 20px;
+}
+
+/* Estilos de los artículos */
+article, .Porteros article {
+    width: 220px;
+    height: 350px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid rgb(17, 17, 153);
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+article:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de imágenes */
+article img, .Porteros article img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Títulos y subtítulos */
+article h1, article h2, .Porteros article h1, .Porteros article h2 {
+    margin: 0;
+    color: #294271;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Navegación */
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0055a5;
+    border-radius: 5px;
+}
+
+nav button img {
+    vertical-align: middle;
+}
+
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/*He creado un pie de página fijo en la parte inferior de la página, con fondo azul oscuro, 
+texto blanco centrado y sin márgenes en el párrafo. También lo he hecho para que se extienda a 
+todo el ancho y tenga un relleno de 10px.*/
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+footer p {
+    margin: 0;
+}

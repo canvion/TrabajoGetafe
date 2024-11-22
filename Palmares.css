@@ -1,0 +1,147 @@
+/* He configurado el estilo del cuerpo de la página para usar la fuente **Arial**, eliminar márgenes y rellenos, 
+poner un fondo gris claro y ajustar la altura de las líneas de texto. También corregí un pequeño error 
+en la propiedad `line-height`. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1,2;
+}
+
+/* He estilizado el menú de navegación (`nav`) con un fondo azul oscuro, un espaciado de 10px y un diseño flexible 
+para distribuir los botones de manera uniforme. Los botones tienen texto blanco, sin fondo ni borde, y se agrandan 
+al pasar el ratón sobre ellos. También, el logo dentro de los botones se alinea verticalmente al centro. */
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0055a5;
+    border-radius: 5px;
+}
+
+nav button img {
+    vertical-align: middle;
+}
+
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    display:flex;
+    height: 50%;
+    width: 56%;
+    flex-wrap: wrap;
+}
+
+/* He estilizado la tabla para que ocupe todo el ancho disponible y tenga bordes colapsados. 
+He añadido espaciado y un borde inferior para cada celda, con un fondo azul oscuro en los encabezados y texto blanco. 
+Las filas pares tienen un fondo gris claro, y cuando se pasa el ratón sobre una fila, su color de fondo cambia a 
+gris más oscuro. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+section h2 {
+    border-bottom: 2px solid #0055a5;
+    padding-bottom: 5px;
+    color: #003366;
+    font-size: 26px;
+}
+
+/* He estilizado las definiciones (`<dl>`), haciendo que los títulos sean en negrita y azul, y las descripciones 
+tengan un fondo azul, texto blanco y bordes redondeados. Las imágenes dentro de las descripciones tienen un tamaño fijo 
+y el texto tiene un tamaño grande con fuente sans-serif. El diseño es flexible para distribuir los elementos de manera 
+equilibrada. */
+dt {
+    font-weight: bold;
+    color: #1c22a2;
+    font-size: 2em;
+}
+
+dl dd {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: #0055a5;
+    color: white;
+    list-style-type:none;
+    width: 176%;
+    display: flex;
+    justify-content: space-around;
+}
+
+dl dd img {
+    height: auto;
+    margin: 10px 0;
+    width: 300px;
+    height: 300px;
+}
+
+dl dd p {
+    color: white;
+    width: 30%;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* He estilizado el pie de página (`footer`) con un fondo azul oscuro, texto blanco y centrado. 
+Tiene un espaciado de 10px en la parte superior e inferior, y está fijo en la parte inferior de la página. 
+Además, he eliminado el margen del párrafo dentro del pie de página para mantenerlo alineado correctamente. */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
