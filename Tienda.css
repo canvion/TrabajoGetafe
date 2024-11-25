@@ -1,0 +1,162 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navegación */
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #0055a5;
+    border-radius: 5px;
+}
+
+/* Encabezado */
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;  /* Usamos flexbox para alinear los productos en fila */
+    justify-content: space-around;  /* Espacio entre los productos */
+    padding: 20px;
+    flex-wrap: nowrap;  /* No permite que los productos se muevan a una nueva línea */
+    gap: 20px;  /* Espacio entre los productos */
+}
+
+/* Recuadro para cada producto */
+.producto {
+    background: rgb(90, 113, 206);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;  /* Reducción del tamaño de los recuadros para que estén uno al lado del otro */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Título del producto */
+.producto h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 1.2em;  /* Ajustamos el tamaño del título */
+    margin-bottom: 15px;
+}
+
+/* Contenedor de las imágenes */
+.carousel-track {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; /* Asegura que las imágenes se alineen en fila */
+    max-height: 400px; /* Altura máxima del contenedor de las imágenes */
+    overflow-y: auto; /* Hacer scroll vertical si las imágenes superan la altura */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten al contenedor */
+}
+
+/* Diapositivas del carrusel */
+.carousel-slide {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del carrusel */
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+}
+
+.carousel-slide img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del recuadro */
+    height: auto;
+    display: block;
+}
+
+/* Descripción */
+.descripcion {
+    padding-top: 10px;
+}
+
+.descripcion h2 {
+    color: #ffffff;
+    font-size: 1.1em;  /* Ajustamos el tamaño del subtítulo */
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Estilos de los controles de carrusel (opcional, si usas controles de flechas) */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls label {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-controls label:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Ocultar los inputs */
+input[type="radio"] {
+    display: none;
+}
+
+/* Cambiar las imágenes con los inputs */
+#slide1:checked ~ .carousel-track {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-track {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-track {
+    transform: translateX(-200%);
+}
+
+div img {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del ancho del contenedor */
+    max-width: 300px; /* Limita el ancho máximo de la imagen a 300px */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #202020;
+    line-height: 1.2;
+}
+
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0055a5;
+    border-radius: 5px;
+}
+
+nav button img {
+    vertical-align: middle;
+}
+
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+main {
+
+    width: 100%;
+    /* Establece un máximo para el ancho del contenedor */
+    margin: 2%;
+    height: auto;
+    /* Ajusta la altura del contenedor (puedes cambiar esto) */
+    display: flex;
+    /* Usamos flexbox para centrar la imagen dentro del contenedor */
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.texto1 {
+    color: #003366;
+
+}
+
+
+
+.linea {
+    border: none;
+    /* Elimina el borde predeterminado */
+    height: 4px;
+    /* Establece el grosor de la línea a 2 píxeles */
+    background-color: #0055a5;
+    /* Establece el color de la línea */
+    width: 65%;
+    /* Ajusta el ancho de la línea al 80% del contenedor */
+    margin: 20px auto;
+    /* Agrega márgenes de 20px en la parte superior e inferior y la centra horizontalmente */
+
+}
+
+.imagen1 {
+    border: 1px;
+    padding: 2px;
+
+
+}
+
+.cuadro {
+    color: white;
+    background-color: #0055a5;
+    /* Color de fondo azul */
+    width: 100%;
+    /* El cuadro ocupará el 100% del ancho del contenedor */
+    max-width: 1000px;
+    /* Máximo ancho del cuadro */
+    height: 300px;
+    /* Alto del cuadro */
+    margin: 0 auto;
+    /* Centra el cuadro horizontalmente */
+    display: flex;
+    /* Utiliza flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.imagen2 {
+    margin-top: 50px;
+
+}
+
+
+
+.patrocinadores {
+    background-color: #003366;
+    color: #0055a5;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.patrocinadores button {
+    background: #003366;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
