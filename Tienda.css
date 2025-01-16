@@ -48,7 +48,7 @@ main {
 
 /* Recuadro para cada producto */
 .producto {
-    background: rgb(90, 113, 206);
+    background: #0055a5;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 45%;  /* Reducción del tamaño de los recuadros para que estén uno al lado del otro */
@@ -60,7 +60,7 @@ main {
 /* Título del producto */
 .producto h1 {
     text-align: center;
-    color: #003366;
+    color: white;
     font-size: 1.2em;  /* Ajustamos el tamaño del título */
     margin-bottom: 15px;
 }
@@ -152,6 +152,41 @@ input[type="radio"] {
 #slide3:checked ~ .carousel-track {
     transform: translateX(-200%);
 }
+
+/* Estilo del formulario y Contenedor del formulario */
+
+/* Estilo del aside */
+aside {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 200px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 87%;
+    transform: translateX(-50%);
+}
+
+aside h1{
+    text-align: center;
+}
+
+form-container {
+    display: flex;
+    justify-content:end;
+    align-items: end;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+}
+
+
 
 div img {
     width: 100%; /* Ajusta el tamaño de la imagen al 100% del ancho del contenedor */

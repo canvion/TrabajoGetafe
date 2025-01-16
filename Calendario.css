@@ -106,6 +106,58 @@ article img {
     margin-top: 20px;
 }
 
+
+/*   */
+
+/* He estilizado el formulario para que esté fijo en la parte izquierda de la página, 
+con un fondo blanco, padding de 20px, bordes redondeados y sombra sutil. */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%; 
+    margin: 10px; 
+}
+
+form {
+    color: #003366;
+    font-weight: bold;
+}
+
+form h2 {
+    text-align: center;
+}
+
+
+/* He estilizado los campos de entrada, área de texto y selección con un ancho del 100%, padding de 10px, */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+    background-color: #007af3;
+}
+
+
+
 /* He asignado flexibilidad y un margen de 10px a los artículos y listas dentro de la sección.*/
 section > article {
     flex: 1;

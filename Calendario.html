@@ -152,7 +152,23 @@ CSS externo para aplicar estilos personalizados.-->
                     <img src="imagenes/Anoeta.jpg" alt="Anoeta" width="200">
                 </dd>
             </dl>
-        </article>   
+        </article>  
+        
+         <!-- He creado un formulario  -->
+        <article class="Formulario Entradas">
+            <form onsubmit="event.preventDefault(); alert('Formulario enviado');">
+                <h2>Contacto para Comprar Entradas</h2>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>
+        </article>
+
     </section>
     <!-- He añadido un pie de página (`<footer>`) que incluye un mensaje de copyright con el símbolo `&copy;` 
     y el año 2024, junto con el nombre "Getafe CF", indicando la autoría del contenido. 
