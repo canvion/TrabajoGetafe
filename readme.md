@@ -40,6 +40,12 @@ El proyecto consiste en la creación de la página web del Getafe CF. Los distin
 - CSS
 - MD
 
+# Formulario de contacto
+
+
+# Formulario de suscripción
+
+
 ## Agradecimientos
 
 Agradecemos a todos los miembros del equipo por su dedicación y esfuerzo en la realización de este proyecto.
