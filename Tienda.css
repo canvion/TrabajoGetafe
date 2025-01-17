@@ -52,7 +52,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 45%;  /* Reducción del tamaño de los recuadros para que estén uno al lado del otro */
-    padding: 20px;
+    padding: 19px;
     box-sizing: border-box;
     text-align: center;
 }
