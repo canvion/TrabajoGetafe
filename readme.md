@@ -7,13 +7,17 @@ Este proyecto ha sido desarrollado en equipo por Luka, Rubén y Adrián. A conti
 ### Adrián
 - **Palmarés**: Desarrollo del HTML y CSS.
 - **Calendario**: Desarrollo del HTML y CSS.
+- **Formulario Calendario**: Actualizacion del HTML y CSS.
 
 ### Luka
 - **Inicio**: Desarrollo del HTML y CSS.
+- **Formulario Tienda**: Actualizacion del CSS.
+- **Añadido de comentarios**: En los HTML y CSS restantes.
 
 ### Rubén
 - **Tienda**: Desarrollo del HTML y CSS.
 - **Plantilla**: Desarrollo del HTML y CSS.
+- **Formulario Tienda**: Actualizacion del HTML.
 
 ## Descripción del Proyecto
 
@@ -159,6 +163,36 @@ Hace que todo el texto del formulario sea negrita (bold), mejorando su legibilid
 
 -text-align: center;
 Centra horizontalmente el texto del título (<h2>) dentro del formulario, dándole un aspecto más equilibrado y profesional.
+
+## Expresiones reguladas usadas para la validación
+
+**Formulario Calendario**
+-Campo Nombre (<input type="text">):
+El campo "Nombre" permite texto libre, pero no tiene restricciones explícitas en cuanto a formato, por lo que cualquier texto puede ser ingresado. Sin embargo, la validación requiere que este campo se complete antes de enviar el formulario gracias al atributo required.
+
+-Campo Correo (<input type="email">):
+Aquí es donde se usa una expresión regular implícita. El atributo type="email" en el campo de correo electrónico lleva implícita una validación básica para verificar si el valor introducido es un correo electrónico válido. Esto se realiza mediante una expresión regular interna del navegador que comprueba que el formato del texto sea algo como ejemplo@dominio.com.
+La validación del correo electrónico suele aceptar:
+Al menos un carácter antes del símbolo @.
+Un dominio después del @ con al menos un punto.
+Ejemplo válido: nombre@dominio.com.
+Campo Mensaje (<textarea>):
+
+El campo Mensaje es solo un área de texto que no tiene ninguna validación específica en cuanto al formato del texto ingresado, pero también tiene el atributo required, lo que asegura que el campo no quede vacío.
+
+**Formulario Tienda**
+-Campo Nombre (<input type="text">):
+Validación: El campo de nombre es de tipo text, lo que significa que no hay una restricción explícita sobre qué tipo de caracteres se pueden introducir. Sin embargo, el atributo required asegura que el campo no pueda enviarse vacío. Si el usuario no llena el campo, el formulario no se enviará y el navegador mostrará una advertencia.
+
+-Campo Correo Electrónico (<input type="email">):
+Validación: El atributo type="email" activa una validación implícita del correo electrónico, que se realiza mediante una expresión regular interna en el navegador. Esta validación verifica que el formato del correo sea adecuado, es decir, que contenga al menos un @ y un dominio válido.
+
+-Campo Preferencias de Descuentos y Promociones (<input type="checkbox">):
+Validación: Los campos de casillas de verificación (checkbox) no requieren validación explícita por parte del navegador. Sin embargo, como están dentro de un formulario, se pueden manejar con lógica de JavaScript si se desea hacer una validación adicional (por ejemplo, para asegurarse de que el usuario seleccione al menos una preferencia).
+
+-Campo Frecuencia de Envío (<select>):
+Validación: El campo select no tiene validación basada en expresiones regulares, pero ofrece opciones predefinidas. La validación básica se asegura de que se haya seleccionado una opción antes de enviar el formulario, ya que este campo está incluido en el formulario, pero no tiene el atributo required ni una validación más compleja.
+Expresión Regular Implícita: En este caso, no se utiliza ninguna expresión regular, ya que la validación está asociada con el hecho de que el formulario no se enviará sin seleccionar una opción.
 
 ## Tecnologías Utilizadas
 
