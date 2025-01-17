@@ -45,6 +45,7 @@ Explicación de cada elemento/atributo y de los campos de entrada de datos añad
 **Formulario tienda**
 
 -**HTML**:
+
 ![image](https://github.com/user-attachments/assets/8c549d4f-d761-4b28-8725-e2f19fe6faac)
 
 - form: El elemento contenedor del formulario.
@@ -214,9 +215,11 @@ Hace que todo el texto del formulario sea negrita (bold), mejorando su legibilid
 -text-align: center;
 Centra horizontalmente el texto del título (h2) dentro del formulario, dándole un aspecto más equilibrado y profesional.
 
+
 ## Expresiones reguladas usadas para la validación
 
 **Formulario Calendario**
+
 -Campo Nombre (input type="text"):
 El campo "Nombre" permite texto libre, pero no tiene restricciones explícitas en cuanto a formato, por lo que cualquier texto puede ser ingresado. Sin embargo, la validación requiere que este campo se complete antes de enviar el formulario gracias al atributo required.
 
@@ -231,6 +234,7 @@ Campo Mensaje (textarea):
 El campo Mensaje es solo un área de texto que no tiene ninguna validación específica en cuanto al formato del texto ingresado, pero también tiene el atributo required, lo que asegura que el campo no quede vacío.
 
 **Formulario Tienda**
+
 -Campo Nombre (input type="text"):
 Validación: El campo de nombre es de tipo text, lo que significa que no hay una restricción explícita sobre qué tipo de caracteres se pueden introducir. Sin embargo, el atributo required asegura que el campo no pueda enviarse vacío. Si el usuario no llena el campo, el formulario no se enviará y el navegador mostrará una advertencia.
 
@@ -250,17 +254,21 @@ En este apartado mostraremos como se verian nuestros distintos formularios depen
 - **Formulario para la compra de entradas**
 
 Visualizacion en ordenador:
+
 ![image](https://github.com/user-attachments/assets/3d0c501c-f9f3-4dab-8f66-0ca7f5e70d34)
 
 Visualizacion en el movil:
+
 ![image](https://github.com/user-attachments/assets/27d308e9-2792-44fd-8159-7d76d9f04ecb)
 
 - **Formulario para la subscripcion al equipo**
 
 Visualizacion en ordenador:
+
 ![image](https://github.com/user-attachments/assets/da6bca56-263d-4b77-b1f4-d30450ca3f58)
 
 Visualizacion en el movil:
+
 ![image](https://github.com/user-attachments/assets/c13a36b4-55b7-4610-ae95-67e8c3400f14)
 
 ## Tecnologías Utilizadas
