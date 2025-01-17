@@ -47,7 +47,7 @@ Explicación de cada elemento/atributo y de los campos de entrada de datos añad
 -**HTML**:
 ![image](https://github.com/user-attachments/assets/8c549d4f-d761-4b28-8725-e2f19fe6faac)
 
-- <form>: El elemento contenedor del formulario.
+- form: El elemento contenedor del formulario.
 
 - action: Define a dónde se enviarán los datos del formulario (puede ser una URL relativa o absoluta).
   
@@ -57,7 +57,7 @@ Explicación de cada elemento/atributo y de los campos de entrada de datos añad
   
 - POST: Los datos se envían en el cuerpo de la solicitud (más seguro, ideal para formularios que involucran datos sensibles).
   
-- <input>: Elemento para capturar datos.
+- input: Elemento para capturar datos.
   
 - type: Define el tipo de dato (por ejemplo, text, email, password, checkbox, etc.).
  
@@ -67,16 +67,16 @@ Explicación de cada elemento/atributo y de los campos de entrada de datos añad
   
 - required: Indica que este campo debe completarse antes de enviar el formulario.
   
-- <label>: Proporciona una descripción para un campo.
+- label: Proporciona una descripción para un campo.
   
 - for: Asocia la etiqueta al campo correspondiente mediante el atributo id del campo.
   
-- <button>:
+- button:
     type="submit": Hace que al hacer clic se envíe el formulario al servidor.
   
-- <fieldset>: Agrupa elementos relacionados dentro de un formulario.
+- fieldset: Agrupa elementos relacionados dentro de un formulario.
 
-- <legend>: Proporciona un título al grupo.
+- legend: Proporciona un título al grupo.
 
 - required: Campo obligatorio.
   
@@ -150,9 +150,9 @@ Ajusta la posición horizontal desplazándolo la mitad de su ancho hacia la izqu
 
 -for="nombre": Vincula esta etiqueta al campo con el atributo id="nombre".
 
-- <br>: Inserta un salto de línea después de la etiqueta para que el campo de entrada aparezca en la siguiente línea.
+-br: Inserta un salto de línea después de la etiqueta para que el campo de entrada aparezca en la siguiente línea.
 
--<input>: Campo de entrada para texto.
+-input: Campo de entrada para texto.
 
 -type="text": Indica que se espera texto.
 
@@ -166,7 +166,7 @@ Ajusta la posición horizontal desplazándolo la mitad de su ancho hacia la izqu
 
 -id="correo" y name="correo": Usados para identificar este campo.
 
--<textarea>: Campo para introducir texto más largo.
+-textarea: Campo para introducir texto más largo.
 
 -id="mensaje" y name="mensaje": Identifican este campo.
 
@@ -185,6 +185,7 @@ Ajusta la posición horizontal desplazándolo la mitad de su ancho hacia la izqu
 -value="Restablecer": Texto que aparece en el botón.
 
   -**CSS**:
+  
 ![image](https://github.com/user-attachments/assets/af6f599d-a814-484c-90c3-7aca8427d365)
 
 -background-color: white;
