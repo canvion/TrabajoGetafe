@@ -194,6 +194,27 @@ Validación: Los campos de casillas de verificación (checkbox) no requieren val
 Validación: El campo select no tiene validación basada en expresiones regulares, pero ofrece opciones predefinidas. La validación básica se asegura de que se haya seleccionado una opción antes de enviar el formulario, ya que este campo está incluido en el formulario, pero no tiene el atributo required ni una validación más compleja.
 Expresión Regular Implícita: En este caso, no se utiliza ninguna expresión regular, ya que la validación está asociada con el hecho de que el formulario no se enviará sin seleccionar una opción.
 
+
+## Formularios
+En este apartado mostraremos como se verian nuestros distintos formularios dependiendo de la resolución.
+
+- **Formulario para la compra de entradas**
+
+Visualizacion en ordenador:
+![image](https://github.com/user-attachments/assets/3d0c501c-f9f3-4dab-8f66-0ca7f5e70d34)
+
+Visualizacion en el movil:
+![image](https://github.com/user-attachments/assets/27d308e9-2792-44fd-8159-7d76d9f04ecb)
+
+- **Formulario para la subscripcion al equipo**
+
+Visualizacion en ordenador:
+![image](https://github.com/user-attachments/assets/da6bca56-263d-4b77-b1f4-d30450ca3f58)
+
+Visualizacion en el movil:
+![image](https://github.com/user-attachments/assets/c13a36b4-55b7-4610-ae95-67e8c3400f14)
+
+
 ## Tecnologías Utilizadas
 
 - HTML
