@@ -91,19 +91,19 @@ Explicación de cada elemento/atributo y de los campos de entrada de datos añad
   ![image](https://github.com/user-attachments/assets/9205282a-bf8a-4ebb-9eb7-7bfbb9d90757)
 
 -background: #003366;
-Establece un color de fondo azul oscuro (#003366) para el elemento <aside>
+Establece un color de fondo azul oscuro (#003366) para el elemento aside
 
 -color: white;
-Cambia el color del texto dentro del <aside> a blanco, para que contraste con el fondo.
+Cambia el color del texto dentro del aside a blanco, para que contraste con el fondo.
 
 -padding: 10px;
-Añade un espacio interno de 10px entre el contenido y los bordes del <aside>
+Añade un espacio interno de 10px entre el contenido y los bordes del aside
 
 -border-radius: 8px;
 Redondea las esquinas del borde con un radio de 8px, haciendo que el diseño sea más amigable.
 
 -box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-Añade una sombra sutil debajo del <aside> para darle un efecto de profundidad.
+Añade una sombra sutil debajo del aside para darle un efecto de profundidad.
 
 -margin: 20px auto;
 Establece un margen de 20px hacia fuera en la parte superior e inferior.
@@ -120,15 +120,14 @@ Establece un margen de 20px hacia fuera en la parte superior e inferior.
 Alinea el texto al margen izquierdo.
 
 -position: fixed;
-Fija el elemento <aside> en una posición específica de la pantalla, incluso al hacer scroll.
+Fija el elemento aside en una posición específica de la pantalla, incluso al hacer scroll.
 
 -bottom: 0; y left: 87%;
-Posiciona el <aside> cerca del borde inferior de la pantalla (a 0px).
+Posiciona el aside cerca del borde inferior de la pantalla (a 0px).
 Lo coloca hacia el lado derecho, al 87% del ancho de la pantalla.
 
 -transform: translateX(-50%);
 Ajusta la posición horizontal desplazándolo la mitad de su ancho hacia la izquierda, para centrarlo en relación con left: 87%;.
-
 
 **Formulario Calendario**
 
@@ -213,38 +212,37 @@ Cambia el color del texto del formulario a un azul oscuro (#003366).
 Hace que todo el texto del formulario sea negrita (bold), mejorando su legibilidad y haciendo que destaque más.
 
 -text-align: center;
-Centra horizontalmente el texto del título (<h2>) dentro del formulario, dándole un aspecto más equilibrado y profesional.
+Centra horizontalmente el texto del título (h2) dentro del formulario, dándole un aspecto más equilibrado y profesional.
 
 ## Expresiones reguladas usadas para la validación
 
 **Formulario Calendario**
--Campo Nombre (<input type="text">):
+-Campo Nombre (input type="text"):
 El campo "Nombre" permite texto libre, pero no tiene restricciones explícitas en cuanto a formato, por lo que cualquier texto puede ser ingresado. Sin embargo, la validación requiere que este campo se complete antes de enviar el formulario gracias al atributo required.
 
--Campo Correo (<input type="email">):
+-Campo Correo (input type="email"):
 Aquí es donde se usa una expresión regular implícita. El atributo type="email" en el campo de correo electrónico lleva implícita una validación básica para verificar si el valor introducido es un correo electrónico válido. Esto se realiza mediante una expresión regular interna del navegador que comprueba que el formato del texto sea algo como ejemplo@dominio.com.
 La validación del correo electrónico suele aceptar:
 Al menos un carácter antes del símbolo @.
 Un dominio después del @ con al menos un punto.
 Ejemplo válido: nombre@dominio.com.
-Campo Mensaje (<textarea>):
+Campo Mensaje (textarea):
 
 El campo Mensaje es solo un área de texto que no tiene ninguna validación específica en cuanto al formato del texto ingresado, pero también tiene el atributo required, lo que asegura que el campo no quede vacío.
 
 **Formulario Tienda**
--Campo Nombre (<input type="text">):
+-Campo Nombre (input type="text"):
 Validación: El campo de nombre es de tipo text, lo que significa que no hay una restricción explícita sobre qué tipo de caracteres se pueden introducir. Sin embargo, el atributo required asegura que el campo no pueda enviarse vacío. Si el usuario no llena el campo, el formulario no se enviará y el navegador mostrará una advertencia.
 
--Campo Correo Electrónico (<input type="email">):
+-Campo Correo Electrónico (input type="email"):
 Validación: El atributo type="email" activa una validación implícita del correo electrónico, que se realiza mediante una expresión regular interna en el navegador. Esta validación verifica que el formato del correo sea adecuado, es decir, que contenga al menos un @ y un dominio válido.
 
--Campo Preferencias de Descuentos y Promociones (<input type="checkbox">):
+-Campo Preferencias de Descuentos y Promociones (input type="checkbox"):
 Validación: Los campos de casillas de verificación (checkbox) no requieren validación explícita por parte del navegador. Sin embargo, como están dentro de un formulario, se pueden manejar con lógica de JavaScript si se desea hacer una validación adicional (por ejemplo, para asegurarse de que el usuario seleccione al menos una preferencia).
 
--Campo Frecuencia de Envío (<select>):
+-Campo Frecuencia de Envío (select):
 Validación: El campo select no tiene validación basada en expresiones regulares, pero ofrece opciones predefinidas. La validación básica se asegura de que se haya seleccionado una opción antes de enviar el formulario, ya que este campo está incluido en el formulario, pero no tiene el atributo required ni una validación más compleja.
 Expresión Regular Implícita: En este caso, no se utiliza ninguna expresión regular, ya que la validación está asociada con el hecho de que el formulario no se enviará sin seleccionar una opción.
-
 
 ## Formularios
 En este apartado mostraremos como se verian nuestros distintos formularios dependiendo de la resolución.
@@ -264,7 +262,6 @@ Visualizacion en ordenador:
 
 Visualizacion en el movil:
 ![image](https://github.com/user-attachments/assets/c13a36b4-55b7-4610-ae95-67e8c3400f14)
-
 
 ## Tecnologías Utilizadas
 
