@@ -1,9 +1,13 @@
-* {
+/* Reinicio de márgenes y rellenos predeterminados en todos los elementos,
+   y configuración del modelo de caja para incluir bordes y relleno dentro del tamaño total. */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos generales para el cuerpo de la página: 
+   fuente, color de fondo, color de texto y altura de línea. */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -11,6 +15,8 @@ body {
     line-height: 1.2;
 }
 
+/* Estilos para la barra de navegación: 
+   color de fondo, separación interna y uso de flexbox para alinear los elementos. */
 nav {
     background-color: #003366;
     padding: 10px;
@@ -19,6 +25,8 @@ nav {
     align-items: center;
 }
 
+/* Estilos para los botones dentro de la barra de navegación: 
+   sin fondo ni borde, color de texto blanco, tamaño de fuente y cursor de puntero. */
 nav button {
     background: none;
     border: none;
@@ -27,95 +35,92 @@ nav button {
     cursor: pointer;
 }
 
+/* Efecto al pasar el ratón sobre los botones: 
+   cambio de fondo, redondeo de bordes. */
 nav button:hover {
     background-color: #0055a5;
     border-radius: 5px;
 }
 
+/* Estilos específicos para las imágenes dentro de los botones: 
+   alineación vertical en el medio. */
 nav button img {
     vertical-align: middle;
 }
 
+/* Estilos para el encabezado de la página: 
+   color de fondo azul, color de texto blanco, 
+   alineación centrada y separación interna. */
 header {
     background-color: #0055a5;
     color: white;
     text-align: center;
     padding: 20px 0;
-
 }
 
+/* Estilos generales para la etiqueta <main>: 
+   ancho completo, márgenes, altura automática,
+   uso de flexbox para estructurar los elementos internamente. */
 main {
-
     width: 100%;
-    /* Establece un máximo para el ancho del contenedor */
     margin: 2%;
     height: auto;
-    /* Ajusta la altura del contenedor (puedes cambiar esto) */
     display: flex;
-    /* Usamos flexbox para centrar la imagen dentro del contenedor */
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #ffffff;
 }
 
+/* Estilos específicos para los textos destacados: 
+   color azul oscuro. */
 .texto1 {
     color: #003366;
-
 }
 
-
-
+/* Estilos para una línea decorativa: 
+   eliminación de bordes, color de fondo azul,
+   ajuste de tamaño y centrado horizontal. */
 .linea {
     border: none;
-    /* Elimina el borde predeterminado */
     height: 4px;
-    /* Establece el grosor de la línea a 2 píxeles */
     background-color: #0055a5;
-    /* Establece el color de la línea */
     width: 65%;
-    /* Ajusta el ancho de la línea al 80% del contenedor */
     margin: 20px auto;
-    /* Agrega márgenes de 20px en la parte superior e inferior y la centra horizontalmente */
-
 }
 
+/* Estilos para imágenes específicas: 
+   borde de un píxel y relleno de 2 píxeles. */
 .imagen1 {
     border: 1px;
     padding: 2px;
-
-
 }
 
+/* Estilos para un cuadro contenedor: 
+   color de fondo azul, ajuste de tamaño, centrado horizontal,
+   uso de flexbox para centrar el contenido, bordes redondeados. */
 .cuadro {
     color: white;
     background-color: #0055a5;
-    /* Color de fondo azul */
     width: 100%;
-    /* El cuadro ocupará el 100% del ancho del contenedor */
     max-width: 1000px;
-    /* Máximo ancho del cuadro */
     height: 300px;
-    /* Alto del cuadro */
     margin: 0 auto;
-    /* Centra el cuadro horizontalmente */
     display: flex;
-    /* Utiliza flexbox para centrar el contenido */
     justify-content: center;
-    /* Centra el contenido horizontalmente */
     align-items: center;
-    /* Centra el contenido verticalmente */
     border-radius: 10px;
     box-sizing: border-box;
 }
 
+/* Estilo para imágenes con espacio superior adicional. */
 .imagen2 {
     margin-top: 50px;
-
 }
 
-
-
+/* Estilos para la sección de patrocinadores: 
+   color de fondo y texto azul, separación interna,
+   bordes redondeados y uso de flexbox para distribuir elementos. */
 .patrocinadores {
     background-color: #003366;
     color: #0055a5;
@@ -124,8 +129,10 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
 }
+
+/* Estilos para botones dentro de la sección de patrocinadores: 
+   fondo azul oscuro, sin borde, color de texto blanco y puntero. */
 .patrocinadores button {
     background: #003366;
     border: none;
