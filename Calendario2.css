@@ -8,37 +8,6 @@ body {
     line-height: 1,2;
 }
 
-/* He estilizado el contenedor de cookies con un fondo negro semi-transparente, 
-texto blanco, padding de 20px, bordes redondeados y centrado en la parte inferior de la página. */
-.cookie-banner {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    z-index: 1000;
-}
-
-.cookie-banner button {
-    background-color: #0055a5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.cookie-banner button:hover {
-    background-color: #007af3;
-}
-
 /* He estilizado el menú de navegación (`nav`) con un fondo azul oscuro, un espaciado de 10px y un diseño flexible 
 para distribuir los botones de manera uniforme. Los botones tienen texto blanco, sin fondo ni borde, y se agrandan 
 al pasar el ratón sobre ellos. También, el logo dentro de los botones se alinea verticalmente al centro. */
@@ -208,4 +177,88 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Estilos para el modo oscuro */
+/* MODO OSCURO */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* NAV */
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav button {
+    color: #e0e0e0;
+}
+
+.dark-mode nav button:hover {
+    background-color: #333333;
+}
+
+/* HEADER */
+.dark-mode header {
+    background-color: #222222;
+    color: #e0e0e0;
+}
+
+/* SECTION */
+.dark-mode section {
+    background-color: #1a1a1a;
+}
+
+/* ARTICLE */
+.dark-mode article {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* IMÁGENES EN ARTÍCULOS */
+.dark-mode article img {
+    border: #444 4px solid;
+}
+
+/* FORMULARIO */
+.dark-mode form {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode form input,
+.dark-mode form textarea,
+.dark-mode form select {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.dark-mode form input[type="submit"] {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode form input[type="submit"]:hover {
+    background-color: #666;
+}
+
+/* LISTA DEFINICIONES */
+.dark-mode dt {
+    color: #bbbbbb;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode dd {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+/* FOOTER */
+.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
