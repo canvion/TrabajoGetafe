@@ -145,3 +145,90 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* NAV */
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav button {
+    color: #e0e0e0;
+}
+
+.dark-mode nav button:hover {
+    background-color: #333333;
+}
+
+/* HEADER */
+.dark-mode header {
+    background-color: #222222;
+    color: #e0e0e0;
+}
+
+.dark-mode h2 {
+    color: #bbbbbb;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+/* MAIN */
+.dark-mode main {
+    background-color: #1a1a1a;
+}
+
+/* ARTICLE */
+.dark-mode article {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* TABLA */
+.dark-mode table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode table th {
+    background-color: #333333;
+}
+
+.dark-mode table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.dark-mode table tr:hover {
+    background-color: #3a3a3a;
+}
+
+/* DEFINICIONES */
+.dark-mode dt {
+    color: #bbbbbb;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode dl dd {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+.dark-mode dl dd p {
+    color: #e0e0e0;
+}
+
+/* IMÁGENES */
+.dark-mode dl dd img {
+    border: #444 4px solid;
+}
+
+/* FOOTER */
+.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}

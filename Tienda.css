@@ -20,14 +20,24 @@ nav button {
     background: none;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 1.5em;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 nav button:hover {
     background-color: #0055a5;
     border-radius: 5px;
+}
+
+nav button img {
+    vertical-align: middle;
+}
+
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 /* Encabezado */
@@ -153,8 +163,6 @@ input[type="radio"] {
     transform: translateX(-200%);
 }
 
-/* Estilo del formulario y Contenedor del formulario */
-
 /* Estilo del aside */
 aside {
     background: #003366;
@@ -194,4 +202,63 @@ div img {
     height: auto; /* Mantiene la proporción original de la imagen */
     display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color: #121212;  /* Fondo oscuro */
+    color: #e0e0e0;  /* Texto claro */
+}
+
+/* Modo oscuro para navegación */
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav button {
+    color: #e0e0e0;
+}
+
+.dark-mode nav button:hover {
+    background-color: #333333;
+}
+
+/* Modo oscuro para el encabezado */
+.dark-mode header {
+    background-color: #222222;
+    color: #e0e0e0;
+}
+
+/* Modo oscuro para productos */
+.dark-mode .producto {
+    background: #242424;  /* Fondo oscuro para los productos */
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Imágenes en productos en modo oscuro */
+.dark-mode .producto img {
+    border: #444 4px solid;
+}
+
+/* Modo oscuro para carrusel */
+.dark-mode .carousel-track {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .carousel-controls label {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Modo oscuro para aside */
+.dark-mode aside {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Modo oscuro para footer */
+.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }

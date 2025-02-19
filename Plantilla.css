@@ -112,3 +112,107 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Estilos globales - Modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 0 0 40px; /* Espacio extra para evitar que el contenido quede tapado */
+}
+
+/* Contenedor principal de porteros */
+.dark-mode .Porteros {
+    background-color: #121212;
+}
+
+/* Estilos de los artículos */
+.dark-mode article, 
+.dark-mode .Porteros article {
+    background-color: #242424;
+    border: 2px solid #444;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode article:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos de imágenes */
+.dark-mode article img, 
+.dark-mode .Porteros article img {
+    border: 2px solid #444;
+}
+
+/* Títulos y subtítulos */
+.dark-mode article h1, 
+.dark-mode article h2, 
+.dark-mode .Porteros article h1, 
+.dark-mode .Porteros article h2 {
+    color: #bbbbbb;
+}
+
+/* NAV */
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav button {
+    color: #e0e0e0;
+}
+
+.dark-mode nav button:hover {
+    background-color: #333333;
+}
+
+/* HEADER */
+.dark-mode header {
+    background-color: #222222;
+    color: #e0e0e0;
+}
+
+/* Contenedor principal */
+.dark-mode main {
+    background-color: #1a1a1a;
+}
+
+/* FOOTER */
+.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* FORMULARIO */
+.dark-mode form {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode form input,
+.dark-mode form textarea,
+.dark-mode form select {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+.dark-mode form input[type="submit"] {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode form input[type="submit"]:hover {
+    background-color: #666;
+}
+
+/* LISTA DEFINICIONES */
+.dark-mode dt {
+    color: #bbbbbb;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode dd {
+    background-color: #333333;
+    color: #e0e0e0;
+}
