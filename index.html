@@ -14,7 +14,9 @@
     
     <!-- Enlace a la hoja de estilos externa para aplicar el diseño a la página -->
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="comentarios.css">
     <script src="Oscuro.js"></script>
+    <script src="Comentarios.js"></script>
 </head>
 
 <body>
@@ -65,6 +67,16 @@
                 <h2>Clasificacion actual de nuestro equipo en la liga</h2>
                 <hr class="linea">
                 <img src="imagenes/Clasificacion.jpeg" alt="clasificación" />
+            </div>
+            <!-- Botón para mostrar/ocultar comentarios -->
+            <button onclick="toggleComentarios()">Mostrar/Ocultar Comentarios</button>
+
+            <!-- Sección de comentarios -->
+            <div id="seccionComentarios" style="display: none;">
+                <h2>Comentarios</h2>
+                <input type="text" id="comentarioInput" placeholder="Escribe un comentario">
+                <button onclick="agregarComentario()">Enviar</button>
+                <ul id="listaComentarios"></ul>
             </div>
         </div>
     </main>

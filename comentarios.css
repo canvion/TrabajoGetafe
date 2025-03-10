@@ -1,0 +1,64 @@
+/* Estilos generales */
+#seccionComentarios {
+    display: none;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Botón para mostrar/ocultar comentarios */
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Estilos para el input de comentarios */
+#comentarioInput {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón de enviar */
+#seccionComentarios button {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+#seccionComentarios button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para la lista de comentarios */
+#listaComentarios {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#listaComentarios li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-left: 4px solid #0077cc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
