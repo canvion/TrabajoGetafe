@@ -19,4 +19,28 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.add("dark-mode");
         btnModo.textContent = "☀️ Modo Claro";
     }
+
+    // Función para mostrar/ocultar la sección de comentarios
+    function toggleComentarios() {
+        const seccion = document.getElementById("seccionComentarios");
+        seccion.style.display = seccion.style.display === "none" ? "block" : "none";
+    }
+
+    // Función para agregar comentarios a la lista
+    function agregarComentario() {
+        const input = document.getElementById("comentarioInput");
+        const comentario = input.value.trim(); // Elimina espacios innecesarios
+
+        if (comentario) {
+            const lista = document.getElementById("listaComentarios");
+            const nuevoComentario = document.createElement("li");
+            nuevoComentario.textContent = comentario;
+            lista.appendChild(nuevoComentario);
+
+            input.value = ""; // Limpia el campo de entrada
+        } else {
+            alert("Por favor, escribe un comentario antes de enviarlo.");
+        }
+    }
+
 });
