@@ -1,179 +1,341 @@
-<!DOCTYPE html>
-<!-- Declara el tipo de documento como HTML5 -->
+[16:51, 10/3/2025] 🚮: <!DOCTYPE html>
 <html lang="es">
-<!-- Elemento raíz del documento, con el atributo "lang" especificando el idioma como español -->
-
 <head>
-    <!-- Contenedor para los metadatos del documento -->
     <meta charset="UTF-8">
-    <!-- Define la codificación de caracteres como UTF-8 -->
     <meta name="Autores" content="Luka, Rubén, Adrian">
-    <!-- Define información de los autores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Asegura que el diseño sea responsive -->
     <title>Tienda</title>
-    <!-- Título que aparecerá en la pestaña del navegador -->
     <link rel="stylesheet" href="Tienda.css">
-    <!-- Vincula el archivo de estilos CSS externo -->
     <script src="Oscuro.js"></script>
-</head>
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault();
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-<body>
-    <!-- Contenedor principal del contenido de la página -->
-    <nav>
-        <!-- Barra de navegación -->
-        <button onclick="window.location.href='index.html'">
-            <!-- Botón que redirige a la página de inicio -->
-            <img src="imagenes/getafeLogo.png" alt="Inicio" width="45" height="45">
-            <!-- Logotipo con enlace a la página de inicio -->
-        </button>
-        <button onclick="window.location.href='Palmares.html'">Palmarés</button>
-        <!-- Botón que redirige a la página de "Palmarés" -->
-        <button onclick="window.location.href='Plantilla.html'">Plantilla</button>
-        <!-- Botón que redirige a la página de "Plantilla" -->
-        <button onclick="window.location.href='Calendario2.html'">Calendario</button>
-        <!-- Botón que redirige a la página de "Calendario" -->
-        <button onclick="window.location.href='Tienda.html'">Tienda</button>
-        <!-- Botón que redirige a la página de "Tienda" -->
-        <button id="modoOscuro">🌙 Modo Oscuro</button>
-    </nav>
+            if (nombre === '') {
+                alert('Por favor, ingrese su nombre.');
+                return false;
+            }
 
-    <header>
-        <!-- Encabezado de la página -->
-        <h1>Tienda Oficial del Getafe FC</h1>
-        <!-- Título principal de la tienda -->
-    </header>
+            if (email === '' || !emailRegex…
+[16:51, 10/3/2025] 🚮: el nuevo html
+[16:52, 10/3/2025] 🚮: /* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main class="1requipacion">
-        <!-- Sección principal para la 1ª equipación -->
-        <article class="producto">
-            <!-- Artículo específico de un producto -->
-            <h1>1ª equipación temporada 24/25</h1>
-            <!-- Título del artículo -->
+/* Navegación */
+nav {
+    background-color: #003366;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-            <!-- Contenedor del carrusel de imágenes -->
-            <div class="carousel-track">
-                <div class="carousel-slide">
-                    <!-- Imagen 1 del carrusel -->
-                    <img src="imagenes/1requipacion1.jpg" alt="Imagen 1">
-                </div>
-                <div class="carousel-slide">
-                    <!-- Imagen 2 del carrusel -->
-                    <img src="imagenes/1requipacion2.jpg" alt="Imagen 2">
-                </div>
-                <div class="carousel-slide">
-                    <!-- Imagen 3 del carrusel -->
-                    <img src="imagenes/1requipacion3.jpg" alt="Imagen 3">
-                </div>
-            </div>
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
 
-            <!-- Sección de descripción del producto -->
-            <section class="descripcion">
-                <h2>Descripción</h2>
-                <!-- Subtítulo de la descripción -->
-                <p>
-                    Camiseta primera equipación oficial de juego del Getafe C.F., en su icónico color azul símbolo del
-                    orgullo azulón. Con una textura ligera y transpirable, esta camiseta lleva sublimada la planta de
-                    nuestro Estadio Coliseum, rindiéndole un especial homenaje. Perfecta para sentirte aún más parte del
-                    equipo. Además, en la parte interior, encontraremos todos los resultados de los partidos jugados en
-                    el Coliseum hasta diciembre de 2023.
-                </p>
-                <!-- Detalles de la descripción del producto -->
-            </section>
-        </article>
-    </main>
+nav button:hover {
+    background-color: #0055a5;
+    border-radius: 5px;
+}
 
-    <main class="2nequipacion">
-        <!-- Sección principal para la 2ª equipación -->
-        <article class="producto">
-            <h1>2ª equipación temporada 24/25</h1>
-            <!-- Título del producto -->
+nav button img {
+    vertical-align: middle;
+}
 
-            <!-- Contenedor del carrusel de imágenes -->
-            <div class="carousel-track">
-                <div class="carousel-slide">
-                    <img src="imagenes/2nequipacion1.jpg" alt="Imagen 1">
-                    <!-- Imagen 1 del carrusel -->
-                </div>
-                <div class="carousel-slide">
-                    <img src="imagenes/2nequipacion2.jpg" alt="Imagen 2">
-                    <!-- Imagen 2 del carrusel -->
-                </div>
-                <div class="carousel-slide">
-                    <img src="imagenes/2nequipacion3.jpg" alt="Imagen 3">
-                    <!-- Imagen 3 del carrusel -->
-                </div>
-            </div>
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-            <section class="descripcion">
-                <!-- Sección de descripción -->
-                <h2>Descripción</h2>
-                <p>
-                    Camiseta segunda equipación oficial de juego del Getafe C.F., un homenaje especial a nuestro 
-                    patrocinador Joma. En nuestro característico rojo, esta equipación recrea la primera que tuvimos 
-                    junto a la marca, reviviendo nuestra historia. Con una textura ligera y transpirable, esta camiseta 
-                    está diseñada para ofrecer el máximo confort.
-                </p>
-            </section>
-        </article>
-    </main>
+/* Encabezado */
+header {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-    <main class="colecionista1">
-        <!-- Sección para artículos de colección -->
-        <article class="producto">
-            <h1>Artículo de coleccionista edición limitada</h1>
-            <!-- Título del producto -->
-            <div>
-                <img src="imagenes/jarra.jpg" alt="jarra">
-                <!-- Imagen del artículo de colección -->
-            </div>
-            <section class="descripcion">
-                <h2>Descripción</h2>
-                <p>
-                    Artículo de coleccionista de edición limitada, oficial del Getafe FC, donde podrás disfrutar
-                    de una buena cerveza fresquita portando siempre el sentimiento azulino de la historia del Getafe.
-                </p>
-            </section>
-        </article>
+main {
+    display: flex;  /* Usamos flexbox para alinear los productos en fila */
+    justify-content: space-around;  /* Espacio entre los productos */
+    padding: 20px;
+    flex-wrap: nowrap;  /* No permite que los productos se muevan a una nueva línea */
+    gap: 20px;  /* Espacio entre los productos */
+}
 
-        <aside>
-            <!-- Sección lateral para el formulario -->
-            <h1>Formulario de Suscripción</h1>
-            <!-- Título del formulario -->
-            <form onsubmit="event.preventDefault(); alert('Formulario enviado');">
-                <!-- Formulario con un mensaje de confirmación al enviarse -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <!-- Campo de entrada para el nombre -->
-                <br><br>
+/* Recuadro para cada producto */
+.producto {
+    background: #0055a5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;  /* Reducción del tamaño de los recuadros para que estén uno al lado del otro */
+    padding: 19px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <!-- Campo de entrada para el correo -->
-                <br><br>
+/* Título del producto */
+.producto h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;  /* Ajustamos el tamaño del título */
+    margin-bottom: 15px;
+}
 
-                <label for="preferencias">Preferencias de Descuentos y Promociones:</label><br>
-                <input type="checkbox" id="equipacion1" name="preferencias" value="equipacion1">
-                <label for="equipacion1">1ª Equipación</label><br>
-                <input type="checkbox" id="equipacion2" name="preferencias" value="equipacion2">
-                <label for="equipacion2">2ª Equipación</label><br>
-                <input type="checkbox" id="coleccionista" name="preferencias" value="coleccionista">
-                <label for="coleccionista">Artículos de Colección</label><br><br>
+/* Contenedor de las imágenes */
+.carousel-track {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; /* Asegura que las imágenes se alineen en fila */
+    max-height: 400px; /* Altura máxima del contenedor de las imágenes */
+    overflow-y: auto; /* Hacer scroll vertical si las imágenes superan la altura */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten al contenedor */
+}
 
-                <label for="frecuencia">Frecuencia de Envío:</label>
-                <select id="frecuencia" name="frecuencia">
-                    <option value="semanal">Semanal</option>
-                    <option value="mensual">Mensual</option>
-                    <option value="trimestral">Trimestral</option>
-                </select>
-                <!-- Selección de frecuencia de envíos -->
-                <br><br>
+/* Diapositivas del carrusel */
+.carousel-slide {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del carrusel */
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+}
 
-                <input type="submit" value="Suscribirse">
-                <!-- Botón para enviar el formulario -->
-            </form>
-        </aside>
-    </main>
-</body>
+.carousel-slide img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del recuadro */
+    height: auto;
+    display: block;
+}
 
-</html>
+/* Descripción */
+.descripcion {
+    padding-top: 10px;
+}
+
+.descripcion h2 {
+    color: #ffffff;
+    font-size: 1.1em;  /* Ajustamos el tamaño del subtítulo */
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Estilos de los controles de carrusel (opcional, si usas controles de flechas) */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls label {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-controls label:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Ocultar los inputs */
+input[type="radio"] {
+    display: none;
+}
+
+/* Cambiar las imágenes con los inputs */
+#slide1:checked ~ .carousel-track {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-track {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-track {
+    transform: translateX(-200%);
+}
+
+/* Estilo del aside */
+aside {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 200px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 87%;
+    transform: translateX(-50%);
+}
+
+aside h1{
+    text-align: center;
+}
+
+form-container {
+    display: flex;
+    justify-content:end;
+    align-items: end;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+}
+
+
+
+div img {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del ancho del contenedor */
+    max-width: 300px; /* Limita el ancho máximo de la imagen a 300px */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color: #121212;  /* Fondo oscuro */
+    color: #e0e0e0;  /* Texto claro */
+}
+
+/* Modo oscuro para navegación */
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav button {
+    color: #e0e0e0;
+}
+
+.dark-mode nav button:hover {
+    background-color: #333333;
+}
+
+/* Modo oscuro para el encabezado */
+.dark-mode header {
+    background-color: #222222;
+    color: #e0e0e0;
+}
+
+/* Modo oscuro para productos */
+.dark-mode .producto {
+    background: #242424;  /* Fondo oscuro para los productos */
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Imágenes en productos en modo oscuro */
+.dark-mode .producto img {
+    border: #444 4px solid;
+}
+
+/* Modo oscuro para carrusel */
+.dark-mode .carousel-track {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .carousel-controls label {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Modo oscuro para aside */
+.dark-mode aside {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Modo oscuro para footer */
+.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
+
+.is-hidden {
+    display: none;
+}
