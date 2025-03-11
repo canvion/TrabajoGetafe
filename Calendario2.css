@@ -1,3 +1,4 @@
+\Downloads\Calendario2.css */
 /*He configurado el cuerpo de la página con la fuente Arial, sin márgenes ni rellenos, 
 un fondo gris claro, y corregí el valor de `line-height` a 1.2.*/
 body {
@@ -75,9 +76,6 @@ article img {
     margin-top: 20px;
 }
 
-
-/*   */
-
 /* He estilizado el formulario para que esté fijo en la parte izquierda de la página, 
 con un fondo blanco, padding de 20px, bordes redondeados y sombra sutil. */
 form {
@@ -96,7 +94,6 @@ form {
 form h2 {
     text-align: center;
 }
-
 
 /* He estilizado los campos de entrada, área de texto y selección con un ancho del 100%, padding de 10px, */
 form input,
@@ -123,8 +120,6 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #007af3;
 }
-
-
 
 /* He asignado flexibilidad y un margen de 10px a los artículos y listas dentro de la sección.*/
 section > article {
@@ -238,22 +233,22 @@ footer p {
 }
 
 .dark-mode form input[type="submit"] {
-    background-color: #444;
+    background-color: #0719e2;
     color: #e0e0e0;
 }
 
 .dark-mode form input[type="submit"]:hover {
-    background-color: #666;
+    background-color: #440ceb;
 }
 
 /* LISTA DEFINICIONES */
 .dark-mode dt {
     color: #bbbbbb;
-    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.942);
 }
 
 .dark-mode dd {
-    background-color: #333333;
+    background-color: #0b00df;
     color: #e0e0e0;
 }
 
@@ -261,4 +256,25 @@ footer p {
 .dark-mode footer {
     background-color: #1e1e1e;
     color: #e0e0e0;
+}
+
+/* Añadir estos estilos al final del archivo CSS */
+#contactForm {
+    display: none;
+    transition: display 0.5s ease;
+}
+
+.toggle-button {
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.toggle-button:hover {
+    background-color: #007af3;
 }
