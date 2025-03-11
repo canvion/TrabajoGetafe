@@ -1,6 +1,3 @@
-<!--He creado la estructura inicial de una página HTML con el estándar `<!DOCTYPE html>` y he configurado el idioma 
-como español. En la cabecera(`<head>`), he definido el título de la página y enlazado un archivo 
-CSS externo para aplicar estilos personalizados.-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,8 +6,6 @@ CSS externo para aplicar estilos personalizados.-->
     <script src="Oscuro.js"></script>
 </head>
 <body>
-    <!--He creado un menú de navegación con botones interactivos: algunos muestran alertas emergentes y otros redirigen a
-    páginas específicas. También he añadido un logo en el primer botón para representar el enlace de "Inicio".-->
     <nav>
         <button onclick="window.location.href='index.html'">
             <img src="imagenes/getafeLogo.png" alt="Inicio" width="45" height="45"> 
@@ -25,10 +20,6 @@ CSS externo para aplicar estilos personalizados.-->
         <h1>Calendario Getafe Club de Fútbol</h1>
     </header>
     <section>
-        <!--He creado un artículo que muestra los partidos en casa del Getafe CF. Utilizo una lista de definiciones 
-        (`<dl>`) con detalles como el rival, el estadio, la fecha, la hora y la ubicación de cada partido, 
-        junto con una imagen del Coliseum Alfonso Pérez para cada uno. Cada partido está representado por un 
-        `<dd>` con la información organizada y visualmente clara.-->
         <article class="Casa">
             <dl>  
                 <dt>Partidos en Casa</dt>
@@ -89,10 +80,6 @@ CSS externo para aplicar estilos personalizados.-->
                     <img src="imagenes/Coliseum.jpg" alt="Coliseum Alfonso Pérez" width="200">
                 </dd>
             </dl>
-        <!--He creado un segundo artículo que muestra los partidos **fuera de casa** del Getafe CF. 
-        Al igual que en el artículo anterior, utilizo una lista de definiciones (`<dl>`) para cada partido, 
-        detallando el rival, el estadio, la fecha, la hora y la ubicación. Además, se incluye una imagen 
-        representativa del estadio de cada partido fuera de casa.-->
         </article>
         <article class="Fuera de Casa">
             <dl>
@@ -156,8 +143,10 @@ CSS externo para aplicar estilos personalizados.-->
             </dl>
         </article>  
         
-         <!-- He creado un formulario  -->
-        <article class="Formulario Entradas">
+        <!-- Añadir este botón antes del formulario -->
+        <button id="toggleFormButton" class="toggle-button">Mostrar/Ocultar Formulario de Contacto</button>
+
+        <article class="Formulario Entradas" id="contactForm">
             <form onsubmit="event.preventDefault(); alert('Formulario enviado');">
                 <h2>Contacto para Comprar Entradas</h2>
                 <label for="nombre">Nombre:</label><br>
@@ -170,12 +159,20 @@ CSS externo para aplicar estilos personalizados.-->
                 <input type="reset" value="Restablecer">
             </form>
         </article>
-
     </section>
-    <!-- He añadido un pie de página (`<footer>`) que incluye un mensaje de copyright con el símbolo `&copy;` 
-    y el año 2024, junto con el nombre "Getafe CF", indicando la autoría del contenido. 
-    Este elemento proporciona información relevante sobre la propiedad del sitio web. -->
     <footer>
         <p>&copy; 2024 Getafe CF</p>
     </footer>
+
+    <script>
+    document.getElementById('toggleFormButton').addEventListener('click', function() {
+        var form = document.getElementById('contactForm');
+        if (form.style.display === 'none' || form.style.display === '') {
+            form.style.display = 'block';
+        } else {
+            form.style.display = 'none';
+        }
+    });
+    </script>
 </body>
+</html>
