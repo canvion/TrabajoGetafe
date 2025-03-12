@@ -269,6 +269,16 @@ Visualizacion en el movil:
 - CSS
 - MD
 
+## Reparto del trabajo
+| Integrante | Trabajos Realizados | Tiempo Dedicado | Descripción del Trabajo |
+|------------|---------------------|----------------|-------------------------|
+| Luka       | Estilización y diseño web | 12 horas       | - Encargado de la estilización del HTML y CSS.  
+  - Aseguró una apariencia clara y organizada.  
+  - Desarrollo y optimización de los botones en la interfaz web. |
+| Rubén      | [Trabajo de Rubén]  | 13 horas       | Descripción de Rubén    |
+| Adrián     | [Trabajo de Adrián] | 13 horas       | Descripción de Adrián   |
+
+
 ## Agradecimientos
 
 Agradecemos a todos los miembros del equipo por su dedicación y esfuerzo en la realización de este proyecto.
