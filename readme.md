@@ -270,13 +270,12 @@ Visualizacion en el movil:
 - MD
 
 ## Reparto del trabajo
-| Integrante | Trabajos Realizados | Tiempo Dedicado | Descripción del Trabajo |
-|------------|---------------------|----------------|-------------------------|
-| Luka       | Estilización y diseño web | 12 horas       | - Encargado de la estilización del HTML y CSS.  
-  - Aseguró una apariencia clara y organizada.  
-  - Desarrollo y optimización de los botones en la interfaz web. |
-| Rubén      | [Trabajo de Rubén]  | 13 horas       | Descripción de Rubén    |
-| Adrián     | [Trabajo de Adrián] | 13 horas       | Descripción de Adrián   |
+| Integrante | Trabajos Realizados                          | Tiempo Dedicado | Descripción del Trabajo                                                                 |
+|------------|---------------------------------------------|----------------|-----------------------------------------------------------------------------------------|
+| Luka       | Estilización y diseño web, redacción README | 12 horas       | Encargado de la estilización del HTML y CSS, asegurando una apariencia clara y organizada. Desarrollo y optimización de los botones en la interfaz web. Redacción de parte del README. |
+| Rubén      | Gestión de imágenes, enlaces y JavaScript   | 13 horas       | Control de imágenes y enlaces en la web. Diseño de la paleta de colores y estilización con CSS. Implementación y manejo de JavaScript para diversas funcionalidades. |
+| Adrián     | Optimización y modo oscuro, formularios     | 13 horas       | Control de colores para el modo oscuro. Desarrollo de otra parte del código en JavaScript. Creación y gestión de formularios. Encargado de la optimización general de la web. |
+
 
 
 ## Agradecimientos
